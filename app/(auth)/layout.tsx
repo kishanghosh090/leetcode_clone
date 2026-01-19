@@ -1,7 +1,11 @@
 import React from "react";
 
 const AuthLayout = ({ children }: { children: React.ReactNode }) => {
-  return <div>{children}</div>;
+  return (
+    <main className="flex h-screen justify-center items-center">
+      {children}
+    </main>
+  );
 };
 
 export default AuthLayout;
