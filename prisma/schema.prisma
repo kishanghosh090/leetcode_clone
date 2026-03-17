@@ -39,10 +39,10 @@ model Problem {
   id          String     @id @default(uuid())
   title       String
   description String
-  difficulty  Difficulty // EASY, MEDIUM, HARD
+  difficulty  Difficulty 
   tags        String[]
-  userId      Int // Creator of the problem
-  examples    Json // Language-specific examples
+  userId      Int 
+  examples    Json 
   constraints String
   hints       String?
   editorial   String?
